@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "mini full-stack application using React for the frontend and Nodejs ,Express, Mongodb and other framework for Backend !",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
