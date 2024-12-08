@@ -1,11 +1,12 @@
-const checkAccess=(acceptedRole)=>{
-return(req,res,next)=>{
-    if(req.Role===acceptedRole){
-        next();
-    }else{
-        res.status(401).send({message:"Not Authorized"})
+const checkAccess = (acceptedRole) => {
+    return (req, res, next) => {
+        if (req.role === acceptedRole) {
+            next()
+        } else {
+            res.status(401).send({ message: "Not authorized!" })
+        }
     }
 }
-}
 
-module.exports=checkAccess;
+
+module.exports = checkAccess;
